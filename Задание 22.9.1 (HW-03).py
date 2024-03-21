@@ -47,8 +47,7 @@ if element < left or element > right:
 else:
     print('Позиция введенного числа:', binary_search(array, element, 0, len(array) - 1))
 
-position=binary_search(array, element, 0, len(array)-1) #Присваиваем полученное значение позиции новому аргументу
-#Выводим номера позиций элементов перед и после введенного значения
+position=binary_search(array, element, 0, len(array)-1) 
 if position == len(array)-1:
     print('Позиции элементов перед и после введенного числа:', binary_search(array, element, 0, len(array)-1)-1, binary_search(array, element, 0, len(array)-1))
 elif position ==0:
